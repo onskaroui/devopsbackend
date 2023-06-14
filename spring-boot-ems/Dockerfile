@@ -8,5 +8,5 @@ RUN mvn clean install
 #for the running stage
 FROM openjdk:11
 WORKDIR /spring-boot-ems
-COPY --from=build /spring-boot-ems/target/my-spring-boot-app.jar .
+COPY --from=build /spring-boot-ems/target/spring-boot-ems-0.0.1-SNAPSHOT.jar .
 CMD java -jar my-spring-boot-app.jar
