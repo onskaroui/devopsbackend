@@ -21,14 +21,6 @@ import com.atossyntel.ems.service.EmployeeService;
 
 
 @CrossOrigin
-(
-  origins = {"http://frontemployee.com", "http://localhost:3000"}, // Replace with your actual frontend domain and any other allowed origins
-  allowCredentials = "true",
-  allowedHeaders = {"Authorization", "Content-Type"},
-  exposedHeaders = {},
-  allowedMethods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS},
-  maxAge = 3600 // Set the max age for CORS preflight requests in seconds
-)
 @RequestMapping("/employees")
 @RestController
 public class EmsRestController {
